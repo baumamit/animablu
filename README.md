@@ -9,5 +9,7 @@ To start the localhost page run the terminal command:
 npm start
 
 Setup VScode workstation on your PC / MacOS
+
 git config user.email "youremail@example.com"
+
 git config user.name "Your Name"
