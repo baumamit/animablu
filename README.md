@@ -8,9 +8,50 @@ This website is built with TypeScript on the node.js environment and the React l
 To start the localhost page run the terminal command:
 npm start
 
-Setup VScode workstation on your PC / MacOS:
+------ Setup VScode workstation on your PC / MacOS:
 git config user.email "youremail@example.com"
 git config user.name "Your Name"
+
+
+------ Install TypeScript globally with the latest stable version:
+npm install -g -D typescript
+
+On MacOS use this command instead:
+sudo npm install -g -D typescript
+
+
+The npx command allows you to run the Create React App package without having to install it globally:
+npx create-react-app new-app-name
+
+
+------ Create a React project inside the root folder:
+tsc --init
+
+This will generate a tsconfig.json file in your project’s root folder, allowing you to configure and customize TypeScript compilation options.
+
+Modify the tsconfig.json file for the latest React version:
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    // "jsx": "react-jsx", /* For the latest React version, without preserving the jsx code on buildup */
+    "jsx": "preserve" /* Use "jsx": "preserve" when you want the JSX code to remain intact for further processing by a build tool or bundler. */
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+  },
+  "include": ["src"]
+}
+
 
 
 # Getting Started with Create React App
