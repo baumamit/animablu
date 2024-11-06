@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+import Header from './components/sections/Header';
+//import logo from './logo.svg';
 import './App.css';
 
-function App() {
+/* function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +21,23 @@ function App() {
       </header>
     </div>
   );
-}
+} */
+
+const App: React.FC = () => {
+  const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'Presentazione', href: '/#Presentazione' },
+    { name: 'Pittura', href: '/#Pittura' },
+    { name: 'Scrittura e Teatro', href: '/#Scrittura e Teatro' },
+    { name: 'Contatti', href: '/#Contatti' },
+  ];
+  
+  return (
+    <div>
+      <Header links={navLinks} />
+      {/* Other components go here */}
+    </div>
+  );
+};
 
 export default App;
