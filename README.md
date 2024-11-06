@@ -95,9 +95,18 @@ INSTALL USEFULL PACKAGES
 ------------------------------------------
 
 
+------------------------------------------
+PULL AND RUN COLLABORATIVE PROJECT
+------------------------------------------
+------ Pull the GitHub project to Visual Studio Code
+git pull
+
+------ Install or update all the node modules used by the project
+npm install
 
 ------ Run the React app on localhost:3000 :
 npm start
+
 ------------------------------------------
 
 # Getting Started with Create React App
