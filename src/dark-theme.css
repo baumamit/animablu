@@ -1,0 +1,20 @@
+/* light-theme.css */
+.dark-theme {
+  background-color: #736270;
+  color: #f0f0f0;
+}
+  
+.dark-theme a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+  
+.dark-theme a:hover {
+  color: #DD1896;
+  text-decoration: underline;
+}
+
+.dark-theme button {
+  background-color: black;
+  color: #f0f0f0;
+}

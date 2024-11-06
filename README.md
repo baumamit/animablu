@@ -19,7 +19,7 @@ CONNECT GITHUB
 git config user.email "youremail@example.com"
 git config user.name "Your Name"
 
------- Create a GitHub project
+------ Create a GitHub project:
 On GitHub.com, create a new repository.
 
 ------ Clone your GitHub project to Visual Studio Code
@@ -63,6 +63,18 @@ Modify the tsconfig.json file for the latest React version:
 }
 
 ------------------------------------------
+PULL AND RUN COLLABORATIVE PROJECT
+------------------------------------------
+------ Pull the GitHub project to Visual Studio Code:
+git pull
+
+------ Install or update all the node modules used by the project:
+npm install
+
+------ Run the React app on localhost:3000 :
+npm start
+
+------------------------------------------
 WORK WITH TYPESCRIPT
 ------------------------------------------
 ------ Install TypeScript globally with the latest stable version:
@@ -73,10 +85,10 @@ Note that if permoission is requested what you type is invisible yet you can jus
 Check the installed version:
 tsc -v
 
------- Change extensions from JS to React
+------ Change extensions from JS to React:
 index.js --> index.tsx
 
------- Specify the type of each parameter
+------ Specify the type of each parameter:
 For example:
 
 document.getElementById('root') --> document.getElementById('root') as HTMLElement
@@ -88,24 +100,33 @@ import logo from './logo.svg' --> import { ReactComponent as Logo } from './logo
       export default content;
     }
 
-
-
 ------------------------------------------
 INSTALL USEFULL PACKAGES
 ------------------------------------------
+------ Install Tailwind CSS:
+npm install -D tailwindcss postcss autoprefixer
+------ Initialize Tailwind CSS:
+npx tailwindcss init -p
+
+The official documentation:
+https://tailwindcss.com/docs/guides/create-react-app
+
+In the Visual Studio Code extentions section, search and install:
+Tailwind CSS IntelliSense
+
+------ Install React Icons if you would like to import ready icons
+npm install react-icons
+------ Install TypeScript types for react-icons
+npm install --save-dev @types/react-icons
+
+------ Install React Tooltip for showing popping text on hover
+npm install react-tooltip
 
 
-------------------------------------------
-PULL AND RUN COLLABORATIVE PROJECT
-------------------------------------------
------- Pull the GitHub project to Visual Studio Code
-git pull
+------ Install React Router DOM for handling routing in single-page applications (not used in this app)
+npm install react-router-dom
 
------- Install or update all the node modules used by the project
-npm install
 
------- Run the React app on localhost:3000 :
-npm start
 
 ------------------------------------------
 

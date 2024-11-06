@@ -1,0 +1,20 @@
+/* light-theme.css */
+.light-theme {
+    background-color: #f0f0f0;
+    color: #736270;
+}
+
+.light-theme a {
+    color: #736270;
+    text-decoration: none;
+}
+
+.light-theme a:hover {
+    color: #DD1896;
+    text-decoration: underline;
+}
+
+.light-theme button {
+    background-color: #f0f0f0;
+    color: black;
+}
