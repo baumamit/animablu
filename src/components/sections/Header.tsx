@@ -9,6 +9,7 @@ import '../../dark-theme.css';    // Dark theme
 import { WiMoonAltWaningCrescent3 as MoonIcon } from "react-icons/wi";
 import { MdOutlineLightMode as SunIcon } from "react-icons/md";
 
+import { Tooltip } from 'react-tooltip' // To add hints on hover over elements 
 
 interface HeaderProps {
   links: { name: string; href: string }[];
@@ -36,7 +37,8 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
       </nav>
 
       <div className='cursor-pointer text-3xl' onClick={() => setIsDarkTheme(!isDarkTheme)}>
-        {isDarkTheme ? <SunIcon className='text-yellow-100' /> : <MoonIcon className='text-gray-700' />}
+        {isDarkTheme ? <SunIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità chiara" className='text-yellow-100' /> : <MoonIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità scura" className='text-gray-700' />}
+        <Tooltip id="my-tooltip" />
       </div>
 
     </header>

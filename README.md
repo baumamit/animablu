@@ -122,6 +122,10 @@ npm install --save-dev @types/react-icons
 ------ Install React Tooltip for showing popping text on hover
 npm install react-tooltip
 
+npm install --save-dev @types/react-tooltip
+
+More info on the official website:
+https://react-tooltip.com/docs/getting-started
 
 ------ Install React Router DOM for handling routing in single-page applications (not used in this app)
 npm install react-router-dom
