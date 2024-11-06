@@ -1,34 +1,44 @@
 # animablu
 Anima Blu website for Francesco Canale
 Created by Amit Baum as part of the stage at Kilobit Torino
----------------------
+------------------------------------------
 
 This website is built with TypeScript on the node.js environment and the React library
+Pre-requisits to install:
+Visual Studio Code
+Check Node.js version:
+npm -v
+Check Git version:
+git --version
 
-To start the localhost page run the terminal command:
-npm start
+------------------------------------------
+CONNECT GITHUB
+------------------------------------------
 
 ------ Setup VScode workstation on your PC / MacOS:
 git config user.email "youremail@example.com"
 git config user.name "Your Name"
 
+------ Create a GitHub project
+On GitHub.com, create a new repository.
 
------- Install TypeScript globally with the latest stable version:
-npm install -g -D typescript
-
-On MacOS use this command instead:
-sudo npm install -g -D typescript
-
-
-The npx command allows you to run the Create React App package without having to install it globally:
-npx create-react-app new-app-name
+------ Clone your GitHub project to Visual Studio Code
+Inside the main branch code of the new repository, click on the "Code" button and coppy the Clone HTTPS URL of your project:
+https://github.com/your-user-name/new-project-name.git
+The following command creates a new folder where you run it, and clones the GitHub project inside it:
+git clone URL_of_your_new_project_from_github
 
 
------- Create a React project inside the root folder:
+------------------------------------------
+CREATE AND CONFIGURE A NEW REACT PROJECT
+------------------------------------------
+------ Create a React App package inside the root folder:
+npx create-react-app new-project-name
+
+------ Create a tsconfig.json file inside the root folder:
 tsc --init
 
-This will generate a tsconfig.json file in your project’s root folder, allowing you to configure and customize TypeScript compilation options.
-
+Now you can configure and customize TypeScript compilation options.
 Modify the tsconfig.json file for the latest React version:
 {
   "compilerOptions": {
@@ -52,7 +62,43 @@ Modify the tsconfig.json file for the latest React version:
   "include": ["src"]
 }
 
+------------------------------------------
+WORK WITH TYPESCRIPT
+------------------------------------------
+------ Install TypeScript globally with the latest stable version:
+npm install -g -D typescript
+On MacOS use this command instead:
+sudo npm install -g -D typescript
+Note that if permoission is requested what you type is invisible yet you can just type and press ENTER.
+Check the installed version:
+tsc -v
 
+------ Change extensions from JS to React
+index.js --> index.tsx
+
+------ Specify the type of each parameter
+For example:
+
+document.getElementById('root') --> document.getElementById('root') as HTMLElement
+
+import logo from './logo.svg' --> import { ReactComponent as Logo } from './logo.svg'
+  or create a file named custom.d.ts in your src folder with the following content:
+    declare module '*.svg' {
+      const content: string;
+      export default content;
+    }
+
+
+
+------------------------------------------
+INSTALL USEFULL PACKAGES
+------------------------------------------
+
+
+
+------ Run the React app on localhost:3000 :
+npm start
+------------------------------------------
 
 # Getting Started with Create React App
 
