@@ -1,20 +1,28 @@
 /* light-theme.css */
 .light-theme {
-    background-color: #f0f0f0;
+    background-color: #f6f5f0;
     color: #736270;
+    border-color: #736270;
+}
+
+.light-theme .header-nav a {
+    color: #736270;
+}
+
+.light-theme .header-nav a:hover {
+    color: #DD1896;
 }
 
 .light-theme a {
     color: #736270;
-    text-decoration: none;
 }
 
 .light-theme a:hover {
     color: #DD1896;
-    text-decoration: underline;
 }
 
 .light-theme button {
-    background-color: #f0f0f0;
+    background-color: #f6f5f0;
     color: black;
 }
+

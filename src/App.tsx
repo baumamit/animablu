@@ -1,20 +1,26 @@
 import Header from './components/sections/Header';
+import Presentazione from './components/sections/Presentazione';
+import Home from './components/sections/Home';
 import './App.css';
 
 const App: React.FC = () => {
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Presentazione', href: '/#Presentazione' },
-    { name: 'Pittura', href: '/#Pittura' },
-    { name: 'Scrittura e Teatro', href: '/#Scrittura e Teatro' },
-    { name: 'Contatti', href: '/#Contatti' },
+    { name: 'Home', href: '/#home' },
+    { name: 'Presentazione', href: '/#presentazione' },
+    { name: 'Pittura', href: '/#pittura' },
+    { name: 'Scrittura e Teatro', href: '/#scrittura-e-Teatro' },
+    { name: 'Contatti', href: '/#sontatti' },
   ];
   
   return (
-    <div>
+    <body>
       <Header links={navLinks} />
-    </div>
+      <main className='container'>
+        <Home />
+        <Presentazione />
+      </main>
+    </body>
   );
 };
 

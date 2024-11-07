@@ -116,12 +116,12 @@ Tailwind CSS IntelliSense
 
 ------ Install React Icons if you would like to import ready icons
 npm install react-icons
------- Install TypeScript types for react-icons
+------ Install TypeScript types for React Icons
 npm install --save-dev @types/react-icons
 
 ------ Install React Tooltip for showing popping text on hover
 npm install react-tooltip
-
+------ Install TypeScript types for React Tooltip
 npm install --save-dev @types/react-tooltip
 
 More info on the official website:

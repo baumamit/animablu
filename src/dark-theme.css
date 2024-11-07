@@ -1,20 +1,27 @@
 /* light-theme.css */
 .dark-theme {
   background-color: #736270;
-  color: #f0f0f0;
+  color: #f6f5f0;
+  border-color: #f6f5f0;
 }
-  
+
+.dark-theme .header-nav a {
+  color: #f6f5f0;
+}
+
+.dark-theme .header-nav a:hover {
+  color: #ff97d9;
+}
+
 .dark-theme a {
-  color: #f0f0f0;
-  text-decoration: none;
+  color: #f6f5f0;
 }
   
 .dark-theme a:hover {
-  color: #DD1896;
-  text-decoration: underline;
+  color: #ff97d9;
 }
 
 .dark-theme button {
   background-color: black;
-  color: #f0f0f0;
+  color: #f6f5f0;
 }
