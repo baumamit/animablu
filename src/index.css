@@ -22,6 +22,8 @@ h1 {
   font-weight: 700;
   line-height: 8rem;
   text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
 }
 h2 {
   font-size: 3rem;

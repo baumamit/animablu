@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './Header.css'; // Optional: Add styles in a CSS file.
-import logo from '../../assets/logo.png';
-import logoSmall from '../../assets/logo-w300px.png';
 
 import '../../light-theme.css';  // Default theme
 import '../../dark-theme.css';    // Dark theme
@@ -18,6 +16,8 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ links }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
+  const logo = '/logo.png';
+  const logoSmall = '/logo-w300px.png';
   return (
     <header className={(isDarkTheme ? "dark-theme" : "light-theme") + " " + "header"}>
       <div className="header-logo">
