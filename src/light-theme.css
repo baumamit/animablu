@@ -1,16 +1,17 @@
 /* light-theme.css */
 .light-theme {
-    background-color: #f6f5f0;
     color: #736270;
     border-color: #736270;
+    background-color: #f6f5f0;
 }
 
-.light-theme .header-nav a {
-    color: #736270;
-}
-
-.light-theme .header-nav a:hover {
+.light-theme .site-subtitle {
     color: #DD1896;
+}
+
+/* REMOVE AFTER MOVING DARK MODE ACTION TO APP.TSX */
+.light-theme section, .light-theme header {
+    background-color: brown;
 }
 
 .light-theme a {
@@ -24,5 +25,18 @@
 .light-theme button {
     background-color: #f6f5f0;
     color: black;
+}
+
+.light-theme .header {
+    background-color: #fafafa;
+    color: black;
+  }
+  
+  .light-theme .header-nav a {
+    color: #736270;
+}
+
+.light-theme .header-nav a:hover {
+    color: #DD1896;
 }
 

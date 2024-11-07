@@ -19,29 +19,28 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
   const logo = '/logo.png';
   const logoSmall = '/logo-w300px.png';
   return (
-    <header className={(isDarkTheme ? "dark-theme" : "light-theme") + " " + "header"}>
-      <div className="header-logo">
-        <a href="./">
-          <img fetchPriority="high" width="481" height="181" src={logo} className="attachment-full size-full wp-image-64" alt="Logo" srcSet={logo+" 481w, "+logoSmall+" 300w"} sizes="(max-width: 481px) 100vw, 481px" />
-        </a>
-      </div>
+      <header className={(isDarkTheme ? "dark-theme" : "light-theme") + " " + "header"}>
+          <div className="header-logo">
+            <a href="./">
+              <img fetchPriority="high" width="481" height="181" src={logo} className="attachment-full size-full wp-image-64" alt="Logo" srcSet={logo+" 481w, "+logoSmall+" 300w"} sizes="(max-width: 481px) 100vw, 481px" />
+            </a>
+          </div>
 
-      <nav className="header-nav">
-        <ul className="no-bullets">
-          {links.map((link) => (
-            <li key={link.name}>
-              <a href={link.href}>{link.name}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+          <nav className="header-nav">
+            <ul className="no-bullets">
+              {links.map((link) => (
+                <li key={link.name}>
+                  <a href={link.href}>{link.name}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
 
-      <div className='cursor-pointer text-3xl' onClick={() => setIsDarkTheme(!isDarkTheme)}>
-        {isDarkTheme ? <SunIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità chiara" className='text-yellow-100' /> : <MoonIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità scura" className='text-gray-700' />}
-        <Tooltip id="my-tooltip" />
-      </div>
-
-    </header>
+          <div className='cursor-pointer text-3xl' onClick={() => setIsDarkTheme(!isDarkTheme)}>
+            {isDarkTheme ? <SunIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità chiara" className='text-yellow-100' /> : <MoonIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità scura" className='text-gray-700' />}
+            <Tooltip id="my-tooltip" />
+          </div>
+      </header>
   );
 };
 

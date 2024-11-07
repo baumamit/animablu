@@ -5,11 +5,13 @@ interface PresentazioneProps {
   const Presentazione: React.FC<PresentazioneProps> = () => {
   
     return (
-      <section id="presentazione" className="container px-2 py-12">
-        <a href="#Presentazione"></a>
-        <h2>Presentazione</h2>
-        <hr />
-        Presentazione contenuti
+      <section id="presentazione" className="">
+        <div className="container">
+          <a href="#Presentazione"></a>
+          <h2>Presentazione</h2>
+          <hr />
+          Presentazione contenuti
+        </div>
       </section>
     );
   };

@@ -5,11 +5,7 @@
   border-color: #f6f5f0;
 }
 
-.dark-theme .header-nav a {
-  color: #f6f5f0;
-}
-
-.dark-theme .header-nav a:hover {
+.light-theme .site-subtitle {
   color: #ff97d9;
 }
 
@@ -25,3 +21,17 @@
   background-color: black;
   color: #f6f5f0;
 }
+
+.dark-theme .header {
+  background-color: #736270;
+  color: #fafafa;
+}
+
+.dark-theme .header-nav a {
+  color: #f6f5f0;
+}
+
+.dark-theme .header-nav a:hover {
+  color: #ff97d9;
+}
+
