@@ -26,7 +26,7 @@ h1 {
 
 .site-subtitle {
   font-family: 'Water Brush', cursive;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   position: relative;
   top: -18rem;
@@ -39,22 +39,21 @@ h1 {
   0%, 90% { opacity: 0; }
   90%, 100% { opacity: 1; }
 }
-
-.text-transition {
+.text-transition-fade {
   animation: fade 2s infinite;
 }
 
 
 h2 {
   font-size: 3rem;
-  font-weight: 500;
-  line-height: 3rem;
+  font-weight: 400;
+  line-height: 4rem;
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
 h3 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 2rem;

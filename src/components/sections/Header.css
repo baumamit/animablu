@@ -20,3 +20,10 @@
 .header-nav a:hover {
   text-decoration: underline;
 }
+
+.logo {
+  max-width: 300px; /* Set maximum width */
+  min-width: 200px; /* Set minimum width */
+  width: 100%;      /* Responsive width */
+  height: auto;     /* Keeps aspect ratio */
+}

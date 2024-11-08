@@ -11,7 +11,7 @@ interface HomeProps {
         <div className="container">
           <h1>Francesco Canale</h1>
           {/* <div className="site-subtitle">Artista</div> */}
-          <TextRotator />
+          <TextRotator effect="text-transition-fade" texts={["Artista", "Pittore", "Scrittore", "Influencer"]} />
         </div>
       </section>
     );

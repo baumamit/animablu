@@ -8,38 +8,26 @@ import { WiMoonAltWaningCrescent3 as MoonIcon } from "react-icons/wi";
 import { MdOutlineLightMode as SunIcon } from "react-icons/md";
 
 import { Tooltip } from 'react-tooltip' // To add hints on hover over elements 
+import Logo from '../custom/Logo';
+import Navbar from '../custom/Navbar';
 
 interface HeaderProps {
-  links: { name: string; href: string }[];
+  navLinks: { name: string; href: string }[];
 }
 
-const Header: React.FC<HeaderProps> = ({ links }) => {
+const Header: React.FC<HeaderProps> = ({ navLinks }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-  const logo = '/logo.png';
-  const logoSmall = '/logo-w300px.png';
   return (
       <header className={(isDarkTheme ? "dark-theme" : "light-theme") + " " + "header"}>
-          <div className="header-logo">
-            <a href="./">
-              <img fetchPriority="high" width="481" height="181" src={logo} className="attachment-full size-full wp-image-64" alt="Logo" srcSet={logo+" 481w, "+logoSmall+" 300w"} sizes="(max-width: 481px) 100vw, 481px" />
-            </a>
-          </div>
+        <Logo />
 
-          <nav className="header-nav">
-            <ul className="no-bullets">
-              {links.map((link) => (
-                <li key={link.name}>
-                  <a href={link.href}>{link.name}</a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+        <Navbar navLinks={navLinks} />
 
-          <div className='cursor-pointer text-3xl' onClick={() => setIsDarkTheme(!isDarkTheme)}>
-            {isDarkTheme ? <SunIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità chiara" className='text-yellow-100' /> : <MoonIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità scura" className='text-gray-700' />}
-            <Tooltip id="my-tooltip" />
-          </div>
+        <div className='cursor-pointer text-3xl' onClick={() => setIsDarkTheme(!isDarkTheme)}>
+          {isDarkTheme ? <SunIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità chiara" className='text-yellow-100' /> : <MoonIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità scura" className='text-gray-700' />}
+          <Tooltip id="my-tooltip" />
+        </div>
       </header>
   );
 };

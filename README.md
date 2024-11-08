@@ -124,13 +124,19 @@ npm install react-tooltip
 ------ Install TypeScript types for React Tooltip
 npm install --save-dev @types/react-tooltip
 
-More info on the official website:
-https://react-tooltip.com/docs/getting-started
+More info on the official website: https://react-tooltip.com/docs/getting-started
 
------- Install React Router DOM for handling routing in single-page applications (not used in this app)
+
+------------------------------------------
+USEFULL PACKAGES NOT USED IN THIS PROJECT
+------------------------------------------
+
+------ Install React Router DOM, for handling routing in single-page applications
 npm install react-router-dom
 
-
+------ Install React Rotating Text, for animating text to be replaced from a list
+npm install react-rotating-text --save
+More info: https://npmjs.com/package/react-rotating-text
 
 ------------------------------------------
 

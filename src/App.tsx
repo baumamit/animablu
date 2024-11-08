@@ -16,14 +16,14 @@ const App: React.FC = () => {
   const featuredImage = "/images/Francesco Canale.jpg";
 
   return (
-    <body>
-      <Header links={navLinks}/>
+    <div>
+      <Header navLinks={navLinks}/>
       <img id="featured-image" src={featuredImage} alt="Francesco Canale pittura con la bocca" className="object-cover w-screen h-[400px] " />
       <main>
         <Home />
         <Presentazione />
       </main>
-    </body>
+    </div>
   );
 };
 
