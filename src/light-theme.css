@@ -27,12 +27,16 @@
     color: black;
 }
 
-.light-theme .header {
-    background-color: #fafafa;
+.light-theme header {
+    background-color: rgb(115, 230, 115);
     color: black;
   }
   
-  .light-theme .header-nav a {
+.light-theme header .navbar-fixed-background {
+    background-color: aqua;
+}
+
+.light-theme .header-nav a {
     color: #736270;
 }
 
@@ -40,3 +44,4 @@
     color: #DD1896;
 }
 
+  

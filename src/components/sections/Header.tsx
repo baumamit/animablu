@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Header.css'; // Optional: Add styles in a CSS file.
-
 import '../../light-theme.css';  // Default theme
 import '../../dark-theme.css';    // Dark theme
 
@@ -20,11 +19,17 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
 
   return (
       <header className={(isDarkTheme ? "dark-theme" : "light-theme") + " " + "header"}>
-        <Logo />
+        <div id='navbar-fixed-background' className='navbar-fixed-background z-0'></div>
 
-        <Navbar navLinks={navLinks} />
+        <div className='logo-box'>
+          <Logo />
+        </div>
+        
+        <div className='navbar-box'>
+          <Navbar navLinks={navLinks} />
+        </div>
 
-        <div className='cursor-pointer text-3xl' onClick={() => setIsDarkTheme(!isDarkTheme)}>
+        <div className='w-6 cursor-pointer text-3xl z-10' onClick={() => setIsDarkTheme(!isDarkTheme)}>
           {isDarkTheme ? <SunIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità chiara" className='text-yellow-100' /> : <MoonIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità scura" className='text-gray-700' />}
           <Tooltip id="my-tooltip" />
         </div>

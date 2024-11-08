@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "./TextRotator.css";  // Optional: Add styles in a CSS file.
 
 interface TextRotatorProps {
   effect: string,

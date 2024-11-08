@@ -24,26 +24,6 @@ h1 {
   padding-bottom: 8rem;
 }
 
-.site-subtitle {
-  font-family: 'Water Brush', cursive;
-  font-size: 5rem;
-  font-weight: 700;
-  position: relative;
-  top: -18rem;
-  text-align: center;
-  rotate: -20deg;
-  /* --tw-rotate: -12deg;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); */
-}
-@keyframes fade {
-  0%, 90% { opacity: 0; }
-  90%, 100% { opacity: 1; }
-}
-.text-transition-fade {
-  animation: fade 2s infinite;
-}
-
-
 h2 {
   font-size: 3rem;
   font-weight: 400;
@@ -72,15 +52,6 @@ a {
   text-decoration: underline;
 }
 
-header {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  padding: 3rem 0.5rem;
-  max-width: 1000px;
-  display: block;
-  margin: 0 auto;
-}
-
 /* section #home {
   margin-top: 150px;
 } */
@@ -92,8 +63,14 @@ section {
   margin: 0 auto;
 }
 
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.site-subtitle {
+  font-family: 'Water Brush', cursive;
+  font-size: 5rem;
+  font-weight: 700;
+  position: relative;
+  top: -18rem;
+  text-align: center;
+  rotate: -20deg;
+  /* --tw-rotate: -12deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); */
 }

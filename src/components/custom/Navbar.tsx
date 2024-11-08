@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css'; // Optional: Add styles in a CSS file.
 
 interface Link {
   name: string;
@@ -12,10 +13,11 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
   return (
     <nav className="header-nav">
-      <ul className="no-bullets">
-        {navLinks.map((link) => (
-          <li key={link.name}>
+      <ul className="nav-list">
+        {navLinks.map((link, index) => (
+          <li key={link.name} className="nav-item">
             <a href={link.href}>{link.name}</a>
+            {index < navLinks.length - 1 && <span className="separator">|</span>}
           </li>
         ))}
       </ul>

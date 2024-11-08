@@ -27,6 +27,10 @@
   color: #fafafa;
 }
 
+.dark-theme header .navbar-fixed-background {
+  background-color: rgb(43, 0, 255);
+}
+
 .dark-theme .header-nav a {
   color: #f6f5f0;
 }
