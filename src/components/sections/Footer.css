@@ -1,0 +1,32 @@
+footer {
+    padding: 3rem 0.5rem;
+    align-items: center;      /* Vertical alignment */  
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+footer .footer-contents {
+  display: block;
+  justify-items: center;    /* Horizontal alignment */
+}
+
+footer .footer-contents .logo-box {
+  min-width: 200px;
+  max-width: 300px;  
+  width: 50%;
+}
+
+@media (min-width: 640px) {
+  footer .footer-contents {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+}
+  

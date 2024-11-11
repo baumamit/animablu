@@ -1,8 +1,9 @@
+import './App.css';
+import HeroImage from './components/custom/HeroImage';
 import Header from './components/sections/Header';
 import Presentazione from './components/sections/Presentazione';
 import Home from './components/sections/Home';
-import './App.css';
-import HeroImage from './components/custom/HeroImage';
+import Footer from './components/sections/Footer';
 
 const App: React.FC = () => {
 
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       <main>
         <Home />
         <Presentazione />
+        <Footer />
       </main>
     </div>
   );
