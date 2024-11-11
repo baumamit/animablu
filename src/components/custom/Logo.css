@@ -1,0 +1,19 @@
+header .logo-box {
+    /* justify-items: center; */
+    position: relative;
+    z-index: 20;
+}
+
+header .logo {
+    width: 70vw;
+    max-width: 400px; /* Set maximum width */
+    min-width: 200px; /* Set minimum width */
+    height: auto;     /* Keeps aspect ratio */
+}
+  
+@media (min-width: 1024px) {
+    header .logo {
+        width: 30vw;
+    }
+    }
+  

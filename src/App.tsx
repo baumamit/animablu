@@ -7,7 +7,7 @@ import HeroImage from './components/custom/HeroImage';
 const App: React.FC = () => {
 
   const navLinks = [
-    { name: 'Home', href: '/#home' },
+    { name: 'Home', href: '/#' },
     { name: 'Presentazione', href: '/#presentazione' },
     { name: 'Pittura', href: '/#pittura' },
     { name: 'Scrittura e Teatro', href: '/#scrittura-e-Teatro' },
