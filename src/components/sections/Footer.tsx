@@ -7,7 +7,7 @@ import Normative from '../custom/Normative';
 interface FooterProps {
 }
 
-const Footer: React.FC<FooterProps> = ({ }) => {
+const Footer: React.FC<FooterProps> = () => {
     
     return (
         <footer className="container">

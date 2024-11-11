@@ -1,13 +1,13 @@
 interface PresentazioneProps {
-    
+    hrefSection: string;
   }
   
-  const Presentazione: React.FC<PresentazioneProps> = () => {
+  const Presentazione: React.FC<PresentazioneProps> = ({hrefSection}) => {
   
     return (
       <section id="presentazione" className="">
         <div className="container">
-          <a href="#Presentazione"></a>
+          <a href={hrefSection}></a>
           <h2>Presentazione</h2>
           <hr />
           Presentazione contenuti

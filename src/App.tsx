@@ -3,6 +3,7 @@ import HeroImage from './components/custom/HeroImage';
 import Header from './components/sections/Header';
 import Presentazione from './components/sections/Presentazione';
 import Home from './components/sections/Home';
+import Contacts from './components/sections/Contacts';
 import Footer from './components/sections/Footer';
 
 const App: React.FC = () => {
@@ -12,7 +13,7 @@ const App: React.FC = () => {
     { name: 'Presentazione', href: '/#presentazione' },
     { name: 'Pittura', href: '/#pittura' },
     { name: 'Scrittura e Teatro', href: '/#scrittura-e-Teatro' },
-    { name: 'Contatti', href: '/#sontatti' },
+    { name: 'Contatti', href: '/#contatti' },
   ];
 
   return (
@@ -21,9 +22,10 @@ const App: React.FC = () => {
       <HeroImage />
       <main>
         <Home />
-        <Presentazione />
-        <Footer />
+        <Presentazione hrefSection={navLinks[1].href} />
+        <Contacts />
       </main>
+      <Footer />
     </div>
   );
 };
