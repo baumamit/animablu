@@ -1,14 +1,14 @@
 .socials-icon-wrapper {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: center;
     align-items: center;
 }
 
 .social-icon {
-    font-size: 24px;
-    width: 24px;
+    font-size: 1.5rem;
+    width: 1.5rem;
     color: #333;
     transition: color 0.3s;
 }
@@ -18,9 +18,22 @@
 }
 
 /* Responsive: Adjust icon size on smaller screens */
-@media (max-width: 768px) {
+@media (min-width: 640px) {
     .social-icon {
-        font-size: 20px;
+        font-size: 2rem;
+        width: 2rem;
+    }
+}
+@media (min-width: 1024px) {
+    .social-icon {
+        font-size: 2.5rem;
+        width: 2.5rem;
+    }
+}
+@media (min-width: 1280px) {
+    .social-icon {
+        font-size: 3rem;
+        width: 3rem;
     }
 }
 

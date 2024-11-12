@@ -1,7 +1,8 @@
 import React from 'react';
-//import "./Contacts.css";
+import "./Contacts.css";
 
 import SocialsIconWrapper from "../custom/SocialsIconWrapper";
+import ContactForm from "../custom/ContactForm";
 
 import IconsList from '../custom/IconsList';
 import { FaPhoneAlt as IconPhone } from "react-icons/fa";
@@ -27,24 +28,28 @@ const Contacts: React.FC<ContactsProps> = () => {
   ];
   
   return (
-    <section id="contatti" className="container">
+    <section id="contatti" className="contacts container">
       <h2>Contatti</h2>
       <hr />
-      <IconsList links={iconLinks} />
-      <SocialsIconWrapper
-        socialLinks={[
-          { href: 'https://www.abilityart.it/artisti/francesco-canale', customImageSrc: '/images/ability_art cropped.jpg', iconClass: 'ability-art' },
-          { href: 'https://www.scatoleparlanti.it/prodotto/le-corde-dellanima/', icon: IconScatoleParlanti, iconClass: 'scatole-parlanti' },
-          { href: 'https://www.instagram.com/francescocanaleanimablu/', icon: FaInstagram, iconClass: 'instagram' },
-          { href: 'https://www.youtube.com/c/francescocanaleanimablu', icon: FaYoutube, iconClass: 'youtube' },
-          { href: 'https://linkedin.com/in/francesco-canale-356918224', icon: FaLinkedinIn, iconClass: 'linkedin' },
-          { href: 'https://www.facebook.com/FrancescoCanale.AnimaBlu', icon: FaFacebookF, iconClass: 'facebook' },
-          { href: 'https://www.tiktok.com/@francescocanaleanimablu', icon: FaTiktok, iconClass: 'tiktok' },
-          { href: 'https://x.com/animablucanale', icon: FaTwitter, iconClass: 'twitter' },
-          { href: 'https://animabluartista.blogspot.com/', icon: FaBlogger, iconClass: 'blogger' },
-        ]}
-      />
-
+      <div className='contacts-content'>
+        <div className='contacts-box'>
+          <IconsList links={iconLinks} />
+          <SocialsIconWrapper
+            socialLinks={[
+              { href: 'https://www.abilityart.it/artisti/francesco-canale', customImageSrc: '/images/ability_art cropped.jpg', iconClass: 'ability-art' },
+              { href: 'https://www.scatoleparlanti.it/prodotto/le-corde-dellanima/', icon: IconScatoleParlanti, iconClass: 'scatole-parlanti' },
+              { href: 'https://www.instagram.com/francescocanaleanimablu/', icon: FaInstagram, iconClass: 'instagram' },
+              { href: 'https://www.youtube.com/c/francescocanaleanimablu', icon: FaYoutube, iconClass: 'youtube' },
+              { href: 'https://linkedin.com/in/francesco-canale-356918224', icon: FaLinkedinIn, iconClass: 'linkedin' },
+              { href: 'https://www.facebook.com/FrancescoCanale.AnimaBlu', icon: FaFacebookF, iconClass: 'facebook' },
+              { href: 'https://www.tiktok.com/@francescocanaleanimablu', icon: FaTiktok, iconClass: 'tiktok' },
+              { href: 'https://x.com/animablucanale', icon: FaTwitter, iconClass: 'twitter' },
+              { href: 'https://animabluartista.blogspot.com/', icon: FaBlogger, iconClass: 'blogger' },
+            ]}
+          />
+        </div>
+        <ContactForm />
+      </div>
     </section>
   );
 };

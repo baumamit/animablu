@@ -1,0 +1,15 @@
+section.contacts .contacts-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+section.contacts .contacts-content .contacts-box {
+    margin: auto 0;
+}
+
+@media (min-width: 1280px) {
+    section.contacts .contacts-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}

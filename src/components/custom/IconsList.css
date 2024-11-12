@@ -1,17 +1,12 @@
-.icons-list-box {
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-  justify-content: center;
-  align-items: center;
-}
-
 .icons-list {
+  justify-self:center;
   list-style-type: none;
   padding: 0;
 }
 
 .icons-list-item {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   margin: 5px 0;
 }
