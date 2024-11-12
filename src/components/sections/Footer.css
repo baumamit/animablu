@@ -16,6 +16,13 @@ footer .footer-contents .logo-box {
   width: 50%;
 }
 
+footer .rights-statement {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 @media (min-width: 640px) {
   footer .footer-contents {
     display: flex;

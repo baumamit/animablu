@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <HeroImage />
       <main>
         <Home />
-        <Presentazione hrefSection={navLinks[1].href} />
+        <Presentazione />
         <Contacts />
       </main>
       <Footer />

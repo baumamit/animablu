@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = () => {
                 <Normative />
             </div>
             <hr />
-            <div className='rights-statement text-center p-6 text-sm'>© 2024 Anima Blu - Tutti i diritti Riservati</div>
+            <div className='rights-statement'>© 2024 Anima Blu - Tutti i diritti Riservati</div>
         </footer>
     );
 };
