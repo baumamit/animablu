@@ -1,8 +1,14 @@
 import React from 'react';
 //import "./Contacts.css";
 
+import SocialsIconWrapper from "../custom/SocialsIconWrapper";
+
 import IconsList from '../custom/IconsList';
 import { FaPhoneAlt as IconPhone } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn, FaTiktok, FaBlogger } from 'react-icons/fa';
+//import { MdOutlineAccessibilityNew as IconAbilityArt } from "react-icons/md"; // Placeholder icon for Ability Art
+import { GiBookmark as IconScatoleParlanti } from "react-icons/gi"; // Placeholder for Scatole Parlanti
+
 
 interface ContactsProps {
 }
@@ -19,18 +25,26 @@ const Contacts: React.FC<ContactsProps> = () => {
     { IconComponent: IconPhone, name: `Email: ${contactEmail}`, href: `mailto:${contactEmail}?subject=${contactSubject}&body=${contactMessage}` },
     { IconComponent: IconPhone, name: 'WhatsApp: +39 000 000 000', href: `https://wa.me/${contactMobile}/?text=${contactMessage}` },
   ];
-  console.log(`mailto:${contactEmail}?subject=${contactSubject}&body=${contactMessage}`);
-  console.log(`https://wa.me/${contactMobile}/?text=${contactMessage}`);
   
-  
-  // 'mailto:info@animablu.eu?subject='+{contactSubject}+'&body='+{contactMessage}
-  // 'https://wa.me/'+{contactMobile}+'/?text=MESSAGE'+{contactMessage}
-
   return (
     <section id="contatti" className="container">
       <h2>Contatti</h2>
       <hr />
       <IconsList links={iconLinks} />
+      <SocialsIconWrapper
+        socialLinks={[
+          { href: 'https://www.abilityart.it/artisti/francesco-canale', customImageSrc: '/images/ability_art cropped.jpg', iconClass: 'ability-art' },
+          { href: 'https://www.scatoleparlanti.it/prodotto/le-corde-dellanima/', icon: IconScatoleParlanti, iconClass: 'scatole-parlanti' },
+          { href: 'https://www.instagram.com/francescocanaleanimablu/', icon: FaInstagram, iconClass: 'instagram' },
+          { href: 'https://www.youtube.com/c/francescocanaleanimablu', icon: FaYoutube, iconClass: 'youtube' },
+          { href: 'https://linkedin.com/in/francesco-canale-356918224', icon: FaLinkedinIn, iconClass: 'linkedin' },
+          { href: 'https://www.facebook.com/FrancescoCanale.AnimaBlu', icon: FaFacebookF, iconClass: 'facebook' },
+          { href: 'https://www.tiktok.com/@francescocanaleanimablu', icon: FaTiktok, iconClass: 'tiktok' },
+          { href: 'https://x.com/animablucanale', icon: FaTwitter, iconClass: 'twitter' },
+          { href: 'https://animabluartista.blogspot.com/', icon: FaBlogger, iconClass: 'blogger' },
+        ]}
+      />
+
     </section>
   );
 };

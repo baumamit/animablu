@@ -11,6 +11,7 @@ interface IconsListProps {
 }
 
 const IconsList: React.FC<IconsListProps> = ({ links }) => (
+  <div className="icon-list-box">
     <ul className="icons-list">
       {links.map((link, index) => (
         <li key={index} className="icons-list-item">
@@ -21,6 +22,7 @@ const IconsList: React.FC<IconsListProps> = ({ links }) => (
         </li>
       ))}
     </ul>
+  </div>
 );
 
 export default IconsList;
