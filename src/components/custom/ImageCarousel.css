@@ -8,7 +8,7 @@
   }
   
   .carousel-image {
-    height: 300px;          /* Set your fixed height */
+    height: 500px;          /* Set your fixed height */
     width: auto;            /* Maintain aspect ratio */
     object-fit: cover;      /* Crop image to fit the height */
     margin: auto;           /* Center horizontally */
@@ -17,6 +17,7 @@
   
   .carousel-button {
     color: inherit;
+    /* border: 3px solid black; */
     font-size: 20vw;
     font-weight: 800;
     border: none;
