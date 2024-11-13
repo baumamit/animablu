@@ -5,34 +5,66 @@
     width: 100%;
     max-width: 600px;
     margin: auto;
-  }
-  
+}
+
+.carousel-image {
+  height: 50vw;          /* Set a fixed height */
+  width: auto;            /* Maintain aspect ratio */
+  object-fit: cover;      /* Crop image to fit the height */
+  margin: auto;           /* Center horizontally */
+  border-radius: 2rem;
+}
+
+.carousel-button {
+  color: wheat;
+  -webkit-text-stroke: 5px black;
+  font-size: 20vw;              /* Set a responsive button size */
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-58%);
+  /* padding: 1.5rem; */
+}
+
+.carousel-button:first-of-type {
+  left: 3rem;
+}
+.carousel-button:last-of-type {
+  right: 3rem;
+}
+
+/* @media (min-width: 640px) {
   .carousel-image {
-    height: 500px;          /* Set your fixed height */
-    width: auto;            /* Maintain aspect ratio */
-    object-fit: cover;      /* Crop image to fit the height */
-    margin: auto;           /* Center horizontally */
-    border-radius: 2rem;
+    height: 300px;
   }
-  
   .carousel-button {
-    color: inherit;
-    /* border: 3px solid black; */
-    font-size: 20vw;
-    font-weight: 800;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-58%);
-    padding: 0.5rem;
+    font-size: 8rem;
+    font-weight: 700;
   }
-  
   .carousel-button:first-of-type {
     left: 0.5rem;
   }
-  
   .carousel-button:last-of-type {
     right: 0.5rem;
   }
-  
+}
+@media (min-width: 768px) {
+  .carousel-image {
+    height: 400px;
+  }
+  .carousel-button {
+    font-size: 12rem;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-image {
+    height: 500px;
+  }
+}
+@media (min-width: 1280px) {
+  .carousel-image {
+    height: 600px;
+  }
+} */
