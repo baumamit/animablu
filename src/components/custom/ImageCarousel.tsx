@@ -18,6 +18,18 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
       <button onClick={prevImage} className="carousel-button"><ChevronIcon direction={false} /></button>
       <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carousel-image" />
       <button onClick={nextImage} className="carousel-button"><ChevronIcon direction={true} /></button>
+
+      {/* Bullet indicators */}
+      <div className="carousel-bullets">
+        {images.map((_, index) => (
+          <span
+            key={index}
+            className={`bullet ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index)}
+          ></span>
+        ))}
+      </div>
+
     </div>
   );
 };

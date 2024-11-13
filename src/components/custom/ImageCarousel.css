@@ -27,6 +27,29 @@
   border-radius: 2rem;
 }
 
+.carousel-bullets {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.bullet {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: wheat; /* Default bullet color */
+  cursor: pointer;
+}
+.bullet:hover {
+  background-color: #333; /* Hover bullet color */
+}
+.bullet.active {
+  background-color: #333; /* Active bullet color */
+}
+
+
 @media (min-width: 640px) {
   .carousel-button:first-of-type {
     left: 11%;
@@ -47,6 +70,9 @@
   }
   .carousel-image {
     height: 45vw;           /* Set a responsive height */
+  }
+  .carousel-bullets {
+    gap: 1rem;
   }
 }
 @media (min-width: 1024px) {
