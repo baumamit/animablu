@@ -1,81 +1,78 @@
 .carousel {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;  /* Center children elements horizontally */
+}
+
+.carousel .carousel-button {
+  position: absolute;
+  margin: auto 0;
+}
+
+.carousel-button:first-of-type {
+  left: 12%;
+}
+.carousel-button:last-of-type {
+  right: 12%;
 }
 
 .carousel-image {
   height: 60vw;           /* Set a responsive height */
   width: auto;            /* Maintain aspect ratio */
   object-fit: cover;      /* Crop image to fit the height */
-  margin: auto;           /* Center horizontally */
   border-radius: 2rem;
 }
 
-.chevron {
-  fill: wheat; /* Replace 'blue' with any color or variable */
-  stroke: 10rem inherit; /* Replace with desired color */
-  /* stroke-width: 1rem; */ /* Replace with desired width */
-  width: 5rem;
-}
-.carousel-button {
-  color: wheat;
-  -webkit-text-stroke: 2px black;
-  font-size: 20vw;              /* Set a responsive button size */
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-58%);
-  /* padding: 1.5rem; */
-}
-
-.carousel-button:first-of-type {
-  left: 3rem;
-}
-.carousel-button:last-of-type {
-  right: 3rem;
-}
-
 @media (min-width: 640px) {
+  .carousel-button:first-of-type {
+    left: 11%;
+  }
+  .carousel-button:last-of-type {
+    right: 11%;
+  }
   .carousel-image {
     height: 55vw;           /* Set a responsive height */
   }
-  /* .carousel-button {
-    font-size: 8rem;
-    font-weight: 700;
-  }
-  .carousel-button:first-of-type {
-    left: 0.5rem;
-  }
-  .carousel-button:last-of-type {
-    right: 0.5rem;
-  } */
 }
 @media (min-width: 768px) {
+  .carousel-button:first-of-type {
+    left: 10%;
+  }
+  .carousel-button:last-of-type {
+    right: 10%;
+  }
   .carousel-image {
     height: 45vw;           /* Set a responsive height */
   }
-  .carousel-button {
-    font-size: 12rem;
-  }
 }
 @media (min-width: 1024px) {
-  .carousel-image {
+  .carousel-button:first-of-type {
+    left: 6%;
+  }
+  .carousel-button:last-of-type {
+    right: 6%;
+  }
+    .carousel-image {
     height: 40vw;           /* Set a responsive height */
   }
 }
 @media (min-width: 1280px) {
+  .carousel-button:first-of-type {
+    left: 4%;
+  }
+  .carousel-button:last-of-type {
+    right: 4%;
+  }
   .carousel-image {
     height: 30vw;           /* Set a responsive height */
   }
 }
 @media (min-width: 1536px) {
   .carousel-image {
-    height: 30vw;           /* Set a responsive height */
+    height: 25vw;           /* Set a responsive height */
   }
 }
