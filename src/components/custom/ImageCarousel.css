@@ -14,10 +14,10 @@
 }
 
 .carousel-button:first-of-type {
-  left: 12%;
+  left: 0;
 }
 .carousel-button:last-of-type {
-  right: 12%;
+  right: 0;
 }
 
 .carousel-image {
@@ -52,10 +52,10 @@
 
 @media (min-width: 640px) {
   .carousel-button:first-of-type {
-    left: 11%;
+    left: -5%;
   }
   .carousel-button:last-of-type {
-    right: 11%;
+    right: -5%;
   }
   .carousel-image {
     height: 55vw;           /* Set a responsive height */
@@ -63,10 +63,10 @@
 }
 @media (min-width: 768px) {
   .carousel-button:first-of-type {
-    left: 10%;
+    left: -9%;
   }
   .carousel-button:last-of-type {
-    right: 10%;
+    right: -9%;
   }
   .carousel-image {
     height: 45vw;           /* Set a responsive height */
@@ -77,10 +77,10 @@
 }
 @media (min-width: 1024px) {
   .carousel-button:first-of-type {
-    left: 6%;
+    left: -10%;
   }
   .carousel-button:last-of-type {
-    right: 6%;
+    right: -10%;
   }
     .carousel-image {
     height: 40vw;           /* Set a responsive height */
@@ -88,10 +88,10 @@
 }
 @media (min-width: 1280px) {
   .carousel-button:first-of-type {
-    left: 4%;
+    left: -10%;
   }
   .carousel-button:last-of-type {
-    right: 4%;
+    right: -10%;
   }
   .carousel-image {
     height: 30vw;           /* Set a responsive height */
