@@ -1,17 +1,14 @@
-import TextRotator from "../custom/TextRotator";
+import TextRotator, { EffectType } from "../custom/TextRotator";
 
 interface HomeProps {
   }
   
   const Home: React.FC<HomeProps> = () => {
-
-
     return (
       <section id="home">
-        <div className="container">
-          <h1>Francesco Canale</h1>
-          {/* <div className="site-subtitle">Artista</div> */}
-          <TextRotator effect="text-transition-fade" texts={["Artista", "Pittore", "Scrittore", "Influencer"]} />
+        <div className="container text-center">
+          <h1>Francesco<br/>Canale</h1>
+          <TextRotator effect={EffectType.SpinScale} texts={["Artista", "Pittore", "Scrittore", "Influencer"]} />
         </div>
       </section>
     );

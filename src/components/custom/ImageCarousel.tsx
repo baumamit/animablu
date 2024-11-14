@@ -1,6 +1,6 @@
 //import { type } from '@testing-library/user-event/dist/type';
 import React, { useState } from 'react';
-import ChevronIcon from "./ChevronIcon";
+import ChevronIcon, { Direction } from "./ChevronIcon";
 import './ImageCarousel.css';
 
 interface ImageCarouselProps {
@@ -15,9 +15,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
   return (
     <div className="carousel">
-      <button onClick={prevImage} className="carousel-button"><ChevronIcon direction={false} /></button>
+      <button onClick={prevImage} className="carousel-button"><ChevronIcon direction={Direction.Left} /></button>
       <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carousel-image" />
-      <button onClick={nextImage} className="carousel-button"><ChevronIcon direction={true} /></button>
+      <button onClick={nextImage} className="carousel-button"><ChevronIcon direction={Direction.Right} /></button>
 
       {/* Bullet indicators */}
       <div className="carousel-bullets">

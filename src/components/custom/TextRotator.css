@@ -1,8 +1,46 @@
 @keyframes fade {
     0%, 90% { opacity: 0; }
     90%, 100% { opacity: 1; }
+}
+.text-transition-fade {
+  animation: fade 2s infinite;
+}
+
+@keyframes slide-in {
+  0%, 50% { transform: translateY(-100%); opacity: 0;  }
+  50%, 100% { transform: translateY(0%); opacity: 1; }
+
+  /* from {
+    transform: translateY(-100%);
   }
-  .text-transition-fade {
-    animation: fade 2s infinite;
+
+  to {
+    transform: translateY(0%);
+  } */
+}
+.text-transition-slide-in {
+  animation: slide-in 2s infinite;
+}
+
+@keyframes spin-scale {
+  0% {
+    transform: rotate(-0.1turn) scale(1.5);
+    opacity: 0;
   }
-  
+  30% {
+    transform: rotate(0turn) scale(1);
+    opacity: 1;
+  }
+  95% {
+    transform: rotate(0turn) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0turn) scale(1);
+    opacity: 0;
+  }
+}
+
+.text-transition-spin-scale {
+  animation: spin-scale 2s infinite;
+}
