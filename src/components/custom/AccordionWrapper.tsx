@@ -34,7 +34,7 @@ const AccordionWrapper: React.FC<AccordionWrapperProps> = ({ items }) => {
               backgroundPosition: 'center', /* Centers the image within the button */
             }}
           >
-            <div className="accordion-content">{item.title}</div>
+            <h3 className="accordion-content">{item.title}</h3>
             <div className="accordion-content">{item.content}</div>
           </button>
         </div>

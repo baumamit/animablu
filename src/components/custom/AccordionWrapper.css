@@ -1,5 +1,6 @@
 .accordion-wrapper {
   display: flex;
+  gap: 2vw;
 }
 
 .accordion-item {
