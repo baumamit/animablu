@@ -9,6 +9,12 @@
   padding: 0;
 }
 
+#theme-button {
+  position: absolute; /* or keep as 'absolute' if needed */
+  z-index: 1000; /* ensure it's high enough */
+  border: 2px solid red; /* temporary: see if it’s positioned visibly */
+}
+
 /* html {
 } */
 

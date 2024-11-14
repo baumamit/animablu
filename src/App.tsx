@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import HeroImage from './components/custom/HeroImage';
 import Header from './components/sections/Header';
@@ -9,6 +10,13 @@ import Contacts from './components/sections/Contacts';
 import Footer from './components/sections/Footer';
 
 const App: React.FC = () => {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  const handleThemeToggle = () => {
+    console.log("Theme toggle clicked");
+    setIsDarkTheme((prev) => !prev);
+  };
+
 
   const navLinks = [
     { name: 'Home', href: '/#' },
@@ -19,8 +27,8 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div>
-      <Header navLinks={navLinks}/>
+    <div className={"app" + " " + (isDarkTheme ? "dark-theme" : "light-theme")}>
+      <Header isDarkTheme={isDarkTheme} isDarkThemeClick={handleThemeToggle} navLinks={navLinks}/>
       <HeroImage />
       <main>
         <Home />

@@ -12,19 +12,21 @@ import Navbar from '../custom/Navbar';
 
 interface HeaderProps {
   navLinks: { name: string; href: string }[];
+  isDarkTheme: boolean;
+  isDarkThemeClick: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ navLinks }) => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+const Header: React.FC<HeaderProps> = ({ navLinks, isDarkTheme, isDarkThemeClick }) => {
 
   return (
-      <header className={(isDarkTheme ? "dark-theme" : "light-theme") + " " + "header"}>
+      <header className='header'>
         <div className='container header-contents'>
           <Logo />
           
           <Navbar navLinks={navLinks} />
 
-          <div className='w-6 cursor-pointer text-3xl z-10 absolute right-6' onClick={() => setIsDarkTheme(!isDarkTheme)}>
+          <div id='theme-button' className={'w-6 cursor-pointer text-3xl z-10 absolute right-6 isDarkTheme-'+isDarkTheme}
+          onClick={() => isDarkThemeClick}>
             {isDarkTheme ? 
             <SunIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità chiara" className='text-yellow-100' /> : 
             <MoonIcon data-tooltip-id="my-tooltip" data-tooltip-content="Modalità scura" className='text-gray-700' />}
