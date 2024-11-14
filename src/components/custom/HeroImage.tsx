@@ -10,9 +10,9 @@ const HeroImage = () => {
     }
   }, []);
 
-  const featuredImage = "/images/Francesco Canale.jpg";
+  const featuredImage = "/images/francesco-canale-profile/Francesco Canale.jpg";
 
-  return <img ref={imgRef} id="hero-image" src={featuredImage} alt="Hero Image - Francesco Canale pittura con la bocca" className="hero-image" />
+  return <img ref={imgRef} id="hero-image" src={featuredImage} alt="Featured - Francesco Canale pittura con la bocca" className="hero-image" />
 };
 
 export default HeroImage;

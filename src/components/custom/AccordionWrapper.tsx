@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './AccordionWrapper.css';
 
 interface AccordionItemProps {
+  imageSrc: string;
   title: string;
   content: string;
 }
@@ -20,13 +21,22 @@ const AccordionWrapper: React.FC<AccordionWrapperProps> = ({ items }) => {
   return (
     <div className="accordion-wrapper">
       {items.map((item, index) => (
-        <div key={index} className="accordion-item">
-          <button onClick={() => toggleAccordion(index)} className="accordion-title">
-            {item.title}
-          </button>
-          {activeIndex === index && (
+        <div
+          key={index}
+          className={`accordion-item ${activeIndex === index ? 'active' : ''}`}
+          onClick={() => toggleAccordion(index)}
+        >
+          <button 
+            className="accordion-image-button"
+            style={{
+              backgroundImage: `url('${item.imageSrc}')`,
+              backgroundSize: 'cover',      /* Ensures the image covers the entire button */
+              backgroundPosition: 'center', /* Centers the image within the button */
+            }}
+          >
+            <div className="accordion-content">{item.title}</div>
             <div className="accordion-content">{item.content}</div>
-          )}
+          </button>
         </div>
       ))}
     </div>
@@ -34,3 +44,4 @@ const AccordionWrapper: React.FC<AccordionWrapperProps> = ({ items }) => {
 };
 
 export default AccordionWrapper;
+/* <img src={item.imageSrc} alt={item.title} /> */

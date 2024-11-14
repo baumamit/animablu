@@ -7,9 +7,6 @@ import ContactForm from "../custom/ContactForm";
 import IconsList from '../custom/IconsList';
 import { FaPhoneAlt as IconPhone } from "react-icons/fa";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn, FaTiktok, FaBlogger } from 'react-icons/fa';
-//import { MdOutlineAccessibilityNew as IconAbilityArt } from "react-icons/md"; // Placeholder icon for Ability Art
-import { GiBookmark as IconScatoleParlanti } from "react-icons/gi"; // Placeholder for Scatole Parlanti
-
 
 interface ContactsProps {
 }
@@ -36,8 +33,8 @@ const Contacts: React.FC<ContactsProps> = () => {
           <IconsList links={iconLinks} />
           <SocialsIconWrapper
             socialLinks={[
-              { href: 'https://www.abilityart.it/artisti/francesco-canale', customImageSrc: '/images/ability_art cropped.jpg', iconClass: 'ability-art' },
-              { href: 'https://www.scatoleparlanti.it/prodotto/le-corde-dellanima/', icon: IconScatoleParlanti, iconClass: 'scatole-parlanti' },
+              { href: 'https://www.abilityart.it/artisti/francesco-canale', customImageSrc: '/images/ability-art.png', iconClass: 'ability-art' },
+              { href: 'https://www.scatoleparlanti.it/prodotto/le-corde-dellanima/',  customImageSrc: '/images/scatole-parlanti.png', iconClass: 'scatole-parlanti' },
               { href: 'https://www.instagram.com/francescocanaleanimablu/', icon: FaInstagram, iconClass: 'instagram' },
               { href: 'https://www.youtube.com/c/francescocanaleanimablu', icon: FaYoutube, iconClass: 'youtube' },
               { href: 'https://linkedin.com/in/francesco-canale-356918224', icon: FaLinkedinIn, iconClass: 'linkedin' },

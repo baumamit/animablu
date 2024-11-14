@@ -4,17 +4,20 @@
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
 }
 
 .social-icon {
     font-size: 1.5rem;
     width: 1.5rem;
-    color: #333;
-    transition: color 0.3s;
+    /* color: #333;
+    transition: color 0.3s; */
 }
 
 .social-icon:hover {
-    color: #0073e6;
+    /* color: #0073e6; */
+    transform: translateY(-1rem) scale(2);
+    transition: ease 0.3s;
 }
 
 /* Responsive: Adjust icon size on smaller screens */
