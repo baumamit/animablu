@@ -1,8 +1,5 @@
-header .header-nav :is(.header-navbar-pusher, #navbar-fixed-background, .nav-list) {
-    display: none;
-}
-
 header .header-nav .navbar-fixed-background {
+    display: none;
     width: 100%;        /* w-full */
     height: 70px;
     z-index: 20;
@@ -12,9 +9,10 @@ header .header-nav .navbar-fixed-background {
 }
 
 header .header-nav .nav-list {
+    display: none;
     z-index: 30;
-    position: fixed;    /* fixed */
-    top: 2rem;          /* top-0 */
+    position: fixed;
+    top: 2rem;
     left: 50%;
     transform: translate(-31%, 0);
 }
