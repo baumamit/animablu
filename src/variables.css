@@ -1,0 +1,52 @@
+:root {
+
+    /* Color Palette */
+    --color-ivory: #fffbf0;
+    --color-beige: #ffeeba;
+    --color-yellow: #FFD044;
+    --color-green: #18DD5F;
+    --color-Turquoise: #49e6c3;
+    --color-blue: #4473FF;
+    --color-fuchsia: #DD1896;
+    --color-red: #E6496C;
+    --color-pink-grey: #736270;
+
+    /* Primary */
+    --color-primary-lighter: color-mod(var(--color-primary) tint(30%));
+    --color-primary-light: color-mod(var(--color-primary) tint(15%));
+    --color-primary: var(--color-Turquoise);
+    --color-primary-dark: color-mod(var(--color-primary) shade(15%));
+    --color-primary-darker: color-mod(var(--color-primary) shade(30%));
+    --color-primary-bg: color-mod(var(--color-primary) alpha(20%));
+
+    /* Secondary */
+    --color-secondary-lighter: color-mod(var(--color-secondary) tint(30%));
+    --color-secondary-light: color-mod(var(--color-secondary) tint(15%));
+    --color-secondary: var(--color-yellow);
+    --color-secondary-dark: color-mod(var(--color-secondary) shade(15%));
+    --color-secondary-darker: color-mod(var(--color-secondary) shade(30%));
+    --color-secondary-bg: color-mod(var(--color-secondary) alpha(20%));
+
+    /* Accent */
+    --color-accent-lighter: color-mod(var(--color-accent) tint(30%));
+    --color-accent-light: color-mod(var(--color-accent) tint(15%));
+    --color-accent: var(--color-fuchsia);
+    --color-accent-dark: color-mod(var(--color-accent) shade(15%));
+    --color-accent-darker: color-mod(var(--color-accent) shade(30%));
+    --color-accent-bg: color-mod(var(--color-accent) alpha(20%));
+
+    /* Neutral */
+    --color-neutral: var(--color-pink-grey);
+    --color-neutral-lighter: color-mod(var(--color-neutral) tint(30%));
+    --color-neutral-light: color-mod(var(--color-neutral) tint(15%));
+    --color-neutral-dark: color-mod(var(--color-neutral) shade(15%));
+    --color-neutral-darker: color-mod(var(--color-neutral) shade(30%));
+    
+    /* Semantic */
+    --color-success: var(--color-green);    /* Green for success, safe, right */
+    --color-warning: var(--color-yellow);    /* Yellow for alert, caution, warning */
+    --color-error: var(--color-red);     /* Red for error, danger, wrong */
+    --color-info: var(--color-blue);        /* Blue for information */
+
+  }
+  

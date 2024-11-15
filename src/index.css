@@ -3,16 +3,10 @@
 @tailwind utilities;
 
 * {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   font-size: 16p;
   margin: 0;
   padding: 0;
-}
-
-#theme-button {
-  position: absolute; /* or keep as 'absolute' if needed */
-  z-index: 1000; /* ensure it's high enough */
-  border: 2px solid red; /* temporary: see if it’s positioned visibly */
 }
 
 /* html {
@@ -26,6 +20,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.3rem;
 }
+
+/* #theme-button {
+  pointer-events: auto;
+  z-index: 1000;
+} */
 
 h1 {
   font-size: 6rem;

@@ -1,47 +1,43 @@
 /* light-theme.css */
+  
 .light-theme {
-    color: #736270;
-    border-color: #736270;
-    background-color: #f6f5f0;
+    color: var(--color-primary-dark);
+    border-color: var(--color-neutral);
+    background-color: var(--color-primary-bg);
 }
 
 .light-theme .site-subtitle {
-    color: #DD1896;
-}
-
-/* REMOVE AFTER MOVING DARK MODE ACTION TO APP.TSX */
-.light-theme section, .light-theme header {
-    background-color: brown;
+    color: var(--color-accent);
 }
 
 .light-theme a {
-    color: #736270;
+    color: var(--color-neutral);
 }
 
-.light-theme a:hover {
-    color: #DD1896;
+.light-theme a:hover:not(.social-icon:hover) {
+    color: var(--color-accent);
 }
 
 .light-theme button {
-    background-color: #f6f5f0;
-    color: black;
+    background-color: var(--color-primary-darker);
+    color: var(--color-neutral-dark);
 }
 
 .light-theme header {
-    background-color: rgb(115, 230, 115);
-    color: black;
+    background-color: var(--color-primary);
+    color: var(--color-neutral-darker);
   }
   
 .light-theme header .navbar-fixed-background {
-    background-color: aqua;
+    background-color: var(--color-primary);
 }
 
 .light-theme .header-nav a {
-    color: #736270;
+    color: var(--color-neutral-light);
 }
 
 .light-theme .header-nav a:hover {
-    color: #DD1896;
+    color: var(--color-accent);
 }
 
   

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css'; // Optional: Add styles in a CSS file.
+import ThemeButton from '../custom/ThemeButton'; // Import the new component
 
 interface Link {
   name: string;
@@ -8,9 +9,11 @@ interface Link {
 
 interface NavbarProps {
   navLinks: Link[];
+  isDarkTheme: boolean;
+  isDarkThemeClick: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
+const Navbar: React.FC<NavbarProps> = ({ navLinks, isDarkTheme, isDarkThemeClick }) => {
   return (
       <nav className="header-nav">
         <div className='header-navbar-pusher'></div>
@@ -25,6 +28,8 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
             </li>
           ))}
         </ul>
+        
+        <ThemeButton isDarkTheme={isDarkTheme} toggleTheme={isDarkThemeClick} />
       </nav>
   );
 };

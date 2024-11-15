@@ -1,7 +1,7 @@
 header .logo-box {
     display: flex;
     position: relative;
-    z-index: 20;
+    z-index: 40;
 }
 
 header .logo-box .header-logo {

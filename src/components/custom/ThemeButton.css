@@ -1,0 +1,32 @@
+/* ThemeButton.css */
+#theme-button {
+    display: flex;
+    z-index: 40;
+    position: absolute;
+    right: 1.5rem;
+    /* align-items: center;
+    justify-content: center; */
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    /* line-height: 2.25rem; */
+    width: 3rem;
+    height: 3rem;
+}
+
+#theme-button:hover {
+    transform: scale(1.3);
+}
+
+#theme-button .theme-icon {
+    font-size: 2rem;
+}
+
+#theme-button #theme-tooltip {
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    #theme-button {
+        position: fixed;
+    }
+}

@@ -1,5 +1,22 @@
-header .header-nav {
+header .header-nav :is(.header-navbar-pusher, #navbar-fixed-background, .nav-list) {
     display: none;
+}
+
+header .header-nav .navbar-fixed-background {
+    width: 100%;        /* w-full */
+    height: 70px;
+    z-index: 20;
+    position: fixed;    /* fixed */
+    top: 0;             /* top-0 */
+    left: 0;            /* left-0 */
+}
+
+header .header-nav .nav-list {
+    z-index: 30;
+    position: fixed;    /* fixed */
+    top: 2rem;          /* top-0 */
+    left: 50%;
+    transform: translate(-31%, 0);
 }
 
 .header-nav .nav-item {
@@ -7,32 +24,17 @@ header .header-nav {
     margin: 0.2rem 0;
 }
 
-.header-nav a {
+/* .header-nav a {
     text-decoration: none;
-}
+} */
 
 .header-nav a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    transform: translateY(-1rem) scale(2);
 }
 
 .header-nav .separator {
     margin: 0 1rem;
-}
-
-
-@media (min-width: 500px) {
-}
-
-@media (min-width: 640px) {
-    
-/*     .header-nav {
-        display: flex;
-        padding: 3rem 0.5rem;
-        font-size: 1rem;
-    }   */
-}
-
-@media (min-width: 768px) {
 }
 
 @media (min-width: 1024px) {
@@ -40,22 +42,14 @@ header .header-nav {
         position: relative;    /* fixed */
         display: flex;
         width: 100%;
-        font-size: inherit;
+        /* font-size: inherit; */
     }
 
     header .header-nav .navbar-fixed-background {
-        position: fixed;    /* fixed */
-        top: 0;             /* top-0 */
-        left: 0;            /* left-0 */
-        width: 100%;        /* w-full */
-        height: 50px;
+        display: block;
     }
 
     header .header-nav .nav-list {
-        position: fixed;    /* fixed */
-        top: 2rem;          /* top-0 */
-        left: 50%;
-        transform: translate(-31%, 0);
         display: flex;
     }
 }
