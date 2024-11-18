@@ -22,13 +22,13 @@ const ThemeButton: React.FC<ThemeButtonProps> = ({ isDarkTheme, toggleTheme }) =
         <SunIcon
           data-tooltip-id="theme-tooltip"
           data-tooltip-content="Modalità chiara"
-          className="theme-icon-sun theme-icon text-yellow-100"
+          className="theme-icon-sun theme-icon"
         />
       ) : (
         <MoonIcon
           data-tooltip-id="theme-tooltip"
           data-tooltip-content="Modalità scura"
-          className="theme-icon-moon theme-icon text-gray-700"
+          className="theme-icon-moon theme-icon"
         />
       )}
       <Tooltip id="theme-tooltip" />

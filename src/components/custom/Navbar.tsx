@@ -24,19 +24,20 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks, isDarkTheme, isDarkThemeClick
 
         <div id='navbar-fixed-background' className='navbar-fixed-background'></div>
 
+        {/* Fancy clickable burger menu icon */}
         <div className="burger-menu" onClick={toggleMenu} aria-label="Toggle menu">
           <div className={`line ${menuOpen ? 'open' : ''}`}></div>
           <div className={`line ${menuOpen ? 'open' : ''}`}></div>
           <div className={`line ${menuOpen ? 'open' : ''}`}></div>
         </div>
 
-        {/* Navigation Menu */}
+        {/* Desktop navigation Menu */}
         <div className={`nav-container ${menuOpen ? 'open' : ''}`}>
 
           <ul className="nav-list">
             {navLinks.map((link, index) => (
               <li key={link.name} className="nav-item">
-                <a href={link.href} onClick={() => setMenuOpen(false)}>
+                <a href={link.href} onClick={() => setMenuOpen(false) /* Close burger menu on item click */}>
                   {link.name}
                 </a>
                 {index < navLinks.length - 1 && <span className="separator">|</span>}

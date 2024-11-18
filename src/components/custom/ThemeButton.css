@@ -23,7 +23,10 @@
 }
 
 #theme-button #theme-tooltip {
+    padding: 0.2rem 0.5rem 0.4rem;
     font-size: 1rem;
+    align-content: center;
+    border-radius: 0.4rem;
 }
 
 @media (min-width: 1024px) {

@@ -9,14 +9,6 @@
 @keyframes slide-in {
   0%, 50% { transform: translateY(-100%); opacity: 0;  }
   50%, 100% { transform: translateY(0%); opacity: 1; }
-
-  /* from {
-    transform: translateY(-100%);
-  }
-
-  to {
-    transform: translateY(0%);
-  } */
 }
 .text-transition-slide-in {
   animation: slide-in 2s infinite;
@@ -40,7 +32,6 @@
     opacity: 0;
   }
 }
-
 .text-transition-spin-scale {
   animation: spin-scale 2s infinite;
 }
