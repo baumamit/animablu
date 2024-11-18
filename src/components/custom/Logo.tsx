@@ -14,12 +14,10 @@ const Logo = () => {
   const logo = '/logo.png';
 
   return (
-    <div className='logo-box'>
-      <div className="header-logo">
-          <a href="./">
-              <img ref={imgRef} src={logo} className="logo" alt="Logo - Anima Blu" />
-          </a>
-      </div>
+    <div className="header-logo">
+        <a href="./">
+            <img ref={imgRef} src={logo} className="logo" alt="Logo - Anima Blu" />
+        </a>
     </div>
   )
 };

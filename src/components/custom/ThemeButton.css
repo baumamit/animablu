@@ -1,16 +1,16 @@
 /* ThemeButton.css */
 #theme-button {
-    display: flex;
-    z-index: 40;
-    position: absolute;
-    right: 0.5rem;
-    top: 2.25rem;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* z-index: 40;
+    position: absolute; */
+    /* right: 0.5rem;
+    top: 2.25rem; */
+    /* align-items: center;
+    justify-content: center; */
     cursor: pointer;
     /* line-height: 2.25rem; */
-    max-width: 2rem;
-    max-height: 2rem;
+    /* max-width: 2rem;
+    max-height: 2rem; */
     /* height: 3rem; */
 }
 
@@ -19,6 +19,7 @@
 }
 
 #theme-button .theme-icon {
+    max-width: 2rem;
     font-size: 8vw;
 }
 
@@ -29,8 +30,8 @@
     border-radius: 0.4rem;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     #theme-button {
         position: fixed;
     }
-}
+} */
