@@ -1,6 +1,4 @@
 .chevron-icon {
-    fill: wheat;      /* Replace 'blue' with any color or variable */
-    stroke: black;    /* Replace with desired color */
     stroke-width: 1rem; /* Replace with desired width */
     width: 8vw;        /* Set a responsive icon size */
     max-width: 4rem;    /* Limit the icon maximum size */

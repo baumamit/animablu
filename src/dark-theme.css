@@ -5,8 +5,12 @@
   background-color: var(--color-neutral-darker);
 }
 
+.dark-theme :is(h1,h2,h3,h4) {
+  color: var(--color-primary);
+}
+
 .dark-theme .site-subtitle {
-  color: var(--color-accent-light);
+  color: var(--color-accent-lighter);
 }
 
 .dark-theme a {
@@ -14,7 +18,7 @@
 }
 
 .dark-theme a:hover:not(.social-icon:hover) {
-  color: var(--color-accent-lighter);
+  color: var(--color-accent);
 }
 
 .dark-theme button {
@@ -27,15 +31,60 @@
   color: var(--color-neutral-lighter);
 }
 
-.dark-theme header .navbar-fixed-background {
-  background-color: var(--color-primary-darker);
-}
-
 .dark-theme #theme-button #theme-tooltip {
-  color: var(--color-primary-light);
-  background-color: var(--color-secondary-dark);
+  color: var(--color-secondary);
+  background-color: var(--color-primary-dark);
 }
 
 .dark-theme #theme-button .theme-icon-sun {
-  color: var(--color-yellow);
+  color: var(--color-secondary);
+}
+
+.dark-theme header .nav-container {
+  background-color: var(--color-primary-dark);
+}
+
+.dark-theme header .burger-menu .line {
+  background-color: var(--color-neutral-lighter);
+}
+.dark-theme header .burger-menu .line.open {
+  background-color: var(--color-neutral-darker);
+}
+
+.dark-theme header a {
+  color: var(--color-neutral-lighter);
+}
+.dark-theme header a:hover {
+  color: var(--color-accent-dark);
+}
+
+.dark-theme .contact-form {
+  background-color: var(--color-primary-darker);
+  color: var(--color-neutral-lighter);
+}
+.dark-theme .contact-form button {
+  background-color: var(--color-accent);
+  color: var(--color-neutral-lighter);
+}
+.dark-theme .contact-form button:hover {
+  background-color: var(--color-accent-dark);
+  color: var(--color-neutral-light);
+}
+.dark-theme .contact-form :is(input, select, textarea) {
+  background-color: var(--color-neutral-darker);
+  color: var(--color-neutral-lighter);
+}
+.dark-theme .contact-form ::placeholder {
+  color: var(--color-neutral-lighter);
+}
+
+.dark-theme :is(.normative-box .normative-title, .icons-list .icons-list-item-hyperlink) {
+  color: var(--color-accent-lighter);
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+  .dark-theme .header-nav :is(.nav-container, .nav-container.open) {
+      background-color: inherit;
+  }    
 }

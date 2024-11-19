@@ -11,7 +11,7 @@
     --color-blue: #4473FF;
     --color-fuchsia: #c9007f;
     --color-red: #E6496C;
-    --color-pink-grey: #b598b0;
+    --color-pink-grey: #897485;
 
     /* Primary */
     --color-primary-lighter: hsl(from var(--color-primary) h s calc(l + 30));

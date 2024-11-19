@@ -11,6 +11,7 @@
 .carousel .carousel-button {
   position: absolute;
   margin: auto 0;
+  background-color: inherit;
 }
 
 .carousel-button:first-of-type {
@@ -36,20 +37,12 @@
 }
 
 .bullet {
-  width: 1rem;
-  height: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
-  background-color: wheat; /* Default bullet color */
-  border: 2px solid wheat;
+  border: 3px solid;
   cursor: pointer;
 }
-.bullet:hover {
-  background-color: #333; /* Hover bullet color */
-}
-.bullet.active {
-  background-color: #333; /* Active bullet color */
-}
-
 
 @media (min-width: 640px) {
   .carousel-button:first-of-type {

@@ -1,13 +1,7 @@
 .hero-image {
     object-fit: cover;  /* object-cover */
     width: 100vw;       /* w-screen */
-    /* min-height: 200px; */ /* Set minimum width */  
-    /* max-height: 300px; */      /* h-[400px] */
-    margin-top: 100px;
-}
-
-.hero-image {
-    /* width: 100%; */
+    margin-top: 60px;
     height: 20vh; /* Sets minimum responsive height */
     object-fit: cover; /* Scales image to cover area without stretching */
     object-position: center; /* Keeps focal point centered */
@@ -15,14 +9,19 @@
   
 /* Adjust height for mobile-first, increasing for larger screens */
 /* Tailwind CSS breakpoints: https://tailwindcss.com/docs/responsive-design#using-custom-breakpoints */
-@media (min-width: 640px) {
+@media (min-width: 480) {
     .hero-image {
         height: 25vh;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
     .hero-image {
         height: 30vh;
+    }
+}
+@media (min-width: 768px) {
+    .hero-image {
+        height: 35vh;
     }
 }
 @media (min-width: 1024px) {

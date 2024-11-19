@@ -1,4 +1,4 @@
-footer .footer-contents .normative-box .normative-title {
+.normative-box .normative-title {
     display: flex;
     gap: 0.5rem;
     font-weight: 600;

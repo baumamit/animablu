@@ -1,13 +1,21 @@
 /* light-theme.css */
   
 .light-theme {
-    color: var(--color-primary-dark);
+    color: var(--color-neutral-dark);
     border-color: var(--color-neutral);
     background-color: var(--color-ivory);
 }
 
+.light-theme :is(h1,h2,h3,h4) {
+    color: var(--color-primary-dark);
+}
+
 .light-theme .site-subtitle {
     color: var(--color-accent);
+}
+
+.light-theme section.home {
+    background-color: var(--color-secondary-dark);
 }
 
 .light-theme a {
@@ -26,12 +34,8 @@
 .light-theme header {
     background-color: var(--color-primary-light);
     color: var(--color-neutral-darker);
-  }
-  
-.light-theme header .navbar-fixed-background {
-    background-color: var(--color-primary-light);
 }
-
+  
 .light-theme #theme-button #theme-tooltip {
     color: var(--color-primary-dark);
     background-color: var(--color-secondary-light);
@@ -57,10 +61,40 @@
 }
 
 
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+.light-theme .chevron-icon {
+    fill: var(--color-secondary-dark);      /* Replace 'blue' with any color or variable */
+    stroke: var(--color-neutral-darker);    /* Replace with desired color */
+}
+.light-theme .chevron-icon:hover {
+    fill: var(--color-neutral-darker);      /* Replace 'blue' with any color or variable */
+    stroke: var(--color-secondary-dark);    /* Replace with desired color */
+}
+
+.light-theme .carousel .bullet {
+    background-color: var(--color-secondary-dark); /* Default bullet color */
+    border-color: var(--color-neutral-darker);
+}
+.light-theme .carousel .bullet:hover {
+    background-color: var(--color-neutral-darker); /* Hover bullet color */
+    border-color: var(--color-secondary-dark);
+}
+.light-theme .carousel .bullet.active {
+    background-color: var(--color-neutral-darker); /* Active bullet color */
+    border-color: var(--color-secondary-dark);
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+  
 
 
 .light-theme .contact-form {
-    background-color: var(--color-secondary-light);
+    background-color: var(--color-secondary-dark);
     color: var(--color-neutral-darker);
 }
 .light-theme .contact-form button {
@@ -71,7 +105,18 @@
     background-color: var(--color-accent-dark);
     color: var(--color-neutral-light);
 }
+.light-theme .contact-form :is(input, select, textarea) {
+    background-color: var(--color-secondary-lighter);
+    color: var(--color-neutral-dark);
+}
+.light-theme .contact-form ::placeholder {
+    color: var(--color-neutral-dark);
+}
 
+.light-theme :is(.normative-box .normative-title, .icons-list .icons-list-item-hyperlink) {
+    color: var(--color-accent);
+}
+  
 /* Desktop View */
 @media (min-width: 1024px) {
     .light-theme .header-nav :is(.nav-container, .nav-container.open) {
