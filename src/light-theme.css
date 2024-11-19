@@ -40,23 +40,41 @@
     color: var(--color-neutral-darker);
 }
 
-.light-theme .header-nav a {
-    color: var(--color-neutral-light);
+.light-theme header .nav-container {
+    background-color: var(--color-secondary-light);
 }
 
-.light-theme .header-nav a:hover {
+.light-theme header .burger-menu .line {
+    background-color: var(--color-neutral-darker);
+}
+
+.light-theme header a {
+    color: var(--color-neutral-darker);
+}
+
+.light-theme header a:hover {
     color: var(--color-accent);
 }
 
-.contact-form {
+
+
+
+.light-theme .contact-form {
     background-color: var(--color-secondary-light);
     color: var(--color-neutral-darker);
 }
-.contact-form button {
+.light-theme .contact-form button {
     background-color: var(--color-accent);
     color: var(--color-neutral-lighter);
 }
-.contact-form button:hover {
+.light-theme .contact-form button:hover {
     background-color: var(--color-accent-dark);
     color: var(--color-neutral-light);
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    .light-theme .header-nav :is(.nav-container, .nav-container.open) {
+        background-color: inherit;
+    }    
 }

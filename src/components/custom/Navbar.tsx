@@ -43,8 +43,8 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks, isDarkTheme, isDarkThemeClick
             ))}
           </ul>
           
-          <ThemeButton isDarkTheme={isDarkTheme} toggleTheme={isDarkThemeClick} />
         </div>
+          <ThemeButton isDarkTheme={isDarkTheme} toggleTheme={isDarkThemeClick} />
 
       </nav>
   );
