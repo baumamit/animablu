@@ -1,8 +1,11 @@
 /* General Navbar Styling */
 .header-nav {
+    position: absolute;
+    right: 1rem;
     display: flex;
     text-decoration: none;
     align-items: center;
+    width: 20vw;
     justify-content: end;
 }
 
@@ -22,6 +25,14 @@
 /* Burger Menu */
 .burger-menu {
     cursor: pointer;
+    margin: 2vw;
+}
+.burger-menu.open {
+    /* transform: translate(8rem, 0rem); */
+    position: fixed;
+    right: 0;
+    top: 5.5rem;
+    z-index: 50;
     margin: 1rem;
 }
 
@@ -53,17 +64,33 @@
 /* Menu Open */
 .nav-container.open {
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 0;
-    padding: 1rem;
-    top: 100px;
-    /* width: 100%; */
-    justify-content: flex-end;
-    height: 100vh;
+    padding: 1rem 3rem 1rem 1rem;
+    bottom: 0;
+    height: 90.2vh;
+}
+
+@media (min-width: 480px) {
+    .burger-menu {
+        margin: 0.5rem;
+    }
+}
+@media (min-width: 640px) {
+    .burger-menu {
+        margin: 10vw;
+    }
 }
 
 /* Desktop View */
 @media (min-width: 1024px) {
+    /* Navbar Fixed for Desktop */
+    .header-nav {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+
     .nav-container, .nav-container.open {
         display: flex;
         position: relative;
@@ -73,12 +100,6 @@
         justify-content: space-around;
         align-items: center;    
     }
-        /* Navbar Fixed for Desktop */
-    .header-nav {
-        display: flex;
-        width: 100%;
-    }
-
     .burger-menu {
         display: none;
     }

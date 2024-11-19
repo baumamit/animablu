@@ -23,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({ navLinks, isDarkTheme, isDarkThemeClick
         {/* <div className='header-navbar-pusher'></div> */}
 
         {/* Fancy clickable burger menu icon */}
-        <div className="burger-menu" onClick={toggleMenu} aria-label="Toggle menu">
+        <div className={`burger-menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
           <div className={`line ${menuOpen ? 'open' : ''}`}></div>
           <div className={`line ${menuOpen ? 'open' : ''}`}></div>
           <div className={`line ${menuOpen ? 'open' : ''}`}></div>
