@@ -10,7 +10,7 @@
 }
 
 .dark-theme .site-subtitle {
-  color: var(--color-accent-lighter);
+  color: var(--color-accent-light);
 }
 
 .dark-theme a {
@@ -26,6 +26,9 @@
   color: var(--color-neutral-light);
 }
 
+/* ****** */
+/* Header */
+/* ****** */
 .dark-theme header {
   background-color: var(--color-primary-darker);
   color: var(--color-neutral-lighter);
@@ -58,6 +61,36 @@
   color: var(--color-accent-dark);
 }
 
+/* ************* */
+/* ImageCarousel */
+/* ************* */
+.dark-theme .chevron-icon {
+  fill: var(--color-secondary-light);      /* Replace 'blue' with any color or variable */
+  stroke: var(--color-neutral-darker);    /* Replace with desired color */
+  transition: none;
+}
+.dark-theme .chevron-icon:hover {
+  fill: var(--color-neutral-darker);      /* Replace 'blue' with any color or variable */
+  stroke: var(--color-secondary-light);    /* Replace with desired color */
+  transition: none;
+}
+
+.dark-theme .carousel .bullet {
+  background-color: var(--color-secondary-light); /* Default bullet color */
+  border-color: var(--color-neutral-darker);
+}
+.dark-theme .carousel .bullet:hover {
+  background-color: var(--color-neutral-darker); /* Hover bullet color */
+  border-color: var(--color-secondary-light);
+}
+.dark-theme .carousel .bullet.active {
+  background-color: var(--color-neutral-darker); /* Active bullet color */
+  border-color: var(--color-secondary-light);
+}
+
+/* *********** */
+/* ContactForm */
+/* *********** */
 .dark-theme .contact-form {
   background-color: var(--color-primary-darker);
   color: var(--color-neutral-lighter);
@@ -78,6 +111,9 @@
   color: var(--color-neutral-lighter);
 }
 
+/* ********************* */
+/* Normative e IconsList */
+/* ********************* */
 .dark-theme :is(.normative-box .normative-title, .icons-list .icons-list-item-hyperlink) {
   color: var(--color-accent-lighter);
 }

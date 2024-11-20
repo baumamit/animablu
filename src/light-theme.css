@@ -31,6 +31,9 @@
     color: var(--color-neutral-dark);
 }
 
+/* ****** */
+/* Header */
+/* ****** */
 .light-theme header {
     background-color: var(--color-primary-light);
     color: var(--color-neutral-darker);
@@ -60,18 +63,39 @@
     color: var(--color-accent);
 }
 
+/* ----------------------- */
+/* Section - Presentazione */
+/* ----------------------- */
+section#presentazione {
+    /* background-color: var(--color-secondary-lighter); */
+}
 
-/* *************************************************************** */
-/* *************************************************************** */
-/* *************************************************************** */
-/* *************************************************************** */
+/* ******** */
+/* StoryBox */
+/* ******** */
+.story-box {
+    background-color: hsl(from inherit h s calc(l - 40));
+}
+
+/* ----------------- */
+/* Section - Pittura */
+/* ----------------- */
+section#pittura {
+    background-color: var(--color-secondary-lighter);
+}
+
+/* ************* */
+/* ImageCarousel */
+/* ************* */
 .light-theme .chevron-icon {
     fill: var(--color-secondary-dark);      /* Replace 'blue' with any color or variable */
     stroke: var(--color-neutral-darker);    /* Replace with desired color */
+    transition: none;
 }
 .light-theme .chevron-icon:hover {
     fill: var(--color-neutral-darker);      /* Replace 'blue' with any color or variable */
     stroke: var(--color-secondary-dark);    /* Replace with desired color */
+    transition: none;
 }
 
 .light-theme .carousel .bullet {
@@ -86,13 +110,10 @@
     background-color: var(--color-neutral-darker); /* Active bullet color */
     border-color: var(--color-secondary-dark);
 }
-/* *************************************************************** */
-/* *************************************************************** */
-/* *************************************************************** */
 
-  
-
-
+/* *********** */
+/* ContactForm */
+/* *********** */
 .light-theme .contact-form {
     background-color: var(--color-secondary-dark);
     color: var(--color-neutral-darker);
@@ -113,6 +134,9 @@
     color: var(--color-neutral-dark);
 }
 
+/* ********************* */
+/* Normative e IconsList */
+/* ********************* */
 .light-theme :is(.normative-box .normative-title, .icons-list .icons-list-item-hyperlink) {
     color: var(--color-accent);
 }

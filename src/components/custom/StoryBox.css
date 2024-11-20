@@ -1,0 +1,33 @@
+.story-box {
+    border: 2px solid;
+    border-radius: 1.5rem;
+    padding: 1rem;
+  
+    columns: 1;
+    column-gap: 20px;
+    column-fill: balance; /* Balances column content */
+  }
+
+.story-box p {
+  display: inline; /* Allow text to flow across columns */
+  margin: 0; /* Remove extra spacing between paragraphs */
+}
+
+@media (min-width: 480px) {
+}
+@media (min-width: 640px) {
+    .story-box {
+        columns: 2;
+    }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+    .story-box {
+        columns: 3;
+    }
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}
