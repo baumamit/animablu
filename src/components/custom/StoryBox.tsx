@@ -17,7 +17,7 @@ interface StoryBoxProps {
 
 const StoryBox: React.FC<StoryBoxProps> = ({paragraphs, backgroundColor}) => {
     return (
-        <div className = {'story-box container' + ' ' + (backgroundColor ? backgroundColor : '')}>
+        <div className = {'story-box container sm:columns-2 sm:gap-12 md:columns-3 lg:columns-4' + ' ' + (backgroundColor ? backgroundColor : '')}>
             {paragraphs.map((paragraph) => (
                 <p>{paragraph}</p>
             ))}
